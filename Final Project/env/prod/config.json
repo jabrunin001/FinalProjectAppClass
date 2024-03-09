@@ -1,0 +1,8 @@
+{
+    "databaseUrl": "prod-database-url",
+    "apiKeys": {
+      "serviceA": "prod-api-key-for-service-a"
+    },
+    "debug": false
+  }
+  

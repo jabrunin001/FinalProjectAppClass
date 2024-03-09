@@ -1,0 +1,8 @@
+{
+    "databaseUrl": "dev-database-url",
+    "apiKeys": {
+      "serviceA": "dev-api-key-for-service-a"
+    },
+    "debug": true
+  }
+  

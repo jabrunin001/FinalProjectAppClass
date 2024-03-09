@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "redshift:DescribeClusters"
+        ],
+        "Resource": "*"
+      },
+      {
+        "Effect": "Allow",
+        "Action": [
+          "redshift:GetClusterCredentials"
+        ],
+        "Resource": "arn:aws:redshift-serverless:us-east-2:339712802445:namespace/547743c6-146c-4fb5-9733-b7efa63486f6"
+      }
+    ]
+  }
+  
