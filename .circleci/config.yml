@@ -1,0 +1,37 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@1.2
+
+jobs:
+  build:
+    docker:
+      - image: cimg/python:3.8
+    steps:
+      - checkout
+
+      - python/load-cache
+      - run:
+          name: Install Dependencies
+          command: |
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+
+      - run:
+          name: Run Tests
+          command: |
+            # Add your test command here
+            echo "Running tests (placeholder)"
+
+      - python/save-cache
+
+      # Deployment can be configured here using AWS CLI or Orbs
+      # For example, using AWS Elastic Beanstalk Orb
+      #- aws-elasticbeanstalk/deploy:
+      #    ...
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
