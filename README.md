@@ -38,19 +38,19 @@ For detailed setup instructions, refer to [`docs/setup.md`](docs/setup.md).
 
 ## Usage
 
-To use the application, send a POST request to the `/predict` endpoint with the necessary data payload. For more information, see [`FinalProjectAppClass/docs/usage.md`](docs/usage.md).
+To use the application, send a POST request to the `/predict` endpoint with the necessary data payload. For more information, see Usage
 
 ## Architecture
 
-The application utilizes a Flask backend, hosted on AWS EC2 instances, with data storage in Amazon Redshift. Machine learning predictions are generated using a model trained on historical traffic data. Monitoring is implemented via Prometheus and Grafana. For a detailed architectural overview, consult [`FinalProjectAppClass/docs/architecture.md`](docs/architecture.md).
+The application utilizes a Flask backend, hosted on AWS EC2 instances, with data storage in Amazon Redshift. Machine learning predictions are generated using a model trained on historical traffic data. Monitoring is implemented via Prometheus and Grafana. For a detailed architectural overview, consult Architecture.
 
 ## Security
 
-Security is a core aspect of the application, with policies governing access and interactions with AWS services. Data is encrypted in transit and at rest. For more information on security measures, see [`FinalProjectAppClass/docs/security.md`](docs/security.md).
+Security is a core aspect of the application, with policies governing access and interactions with AWS services. Data is encrypted in transit and at rest. For more information on security measures, see Security.
 
 ## Monitoring
 
-Prometheus is used for collecting application metrics, with Grafana providing a visualization layer. For details on the monitoring setup and how to configure alerting, refer to [`FinalProjectAppClass/docs/monitoring.md`](FinalProjectAppClass/docs/monitoring.md).
+Prometheus is used for collecting application metrics, with Grafana providing a visualization layer. For details on the monitoring setup and how to configure alerting, refer to Monitoring
 
 ## CI/CD
 
